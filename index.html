@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shortly</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"></head> <!-- Social Media Icons -->
+            
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+
+
+</head>
+
+<body>
+    <!-- Header Section start -->
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light bg-white py-3">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="#">Shortly</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Resources</a></li>
+                    </ul>
+                    <ul class="navbar-nav ms-4">
+                        <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
+                        <li class="nav-item"><a class="btn btn-primary rounded-pill px-4" data-bs-toggle="modal"
+                                data-bs-target="#signupModal">Sign Up</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Header Section ends -->
+
+    <!-- Signup Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signupModalLabel">Sign Up</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="signupForm" class="needs-validation" novalidate>
+                        <div class="mb-3">
+                            <label class="form-label">First Name*</label>
+                            <input type="text" class="form-control" id="firstName" required>
+                            <div class="valid-feedback">Good!</div>
+                            <div class="invalid-feedback">Please enter your first name.</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Last Name*</label>
+                            <input type="text" class="form-control" id="lastName" required>
+                            <div class="valid-feedback">Very Good!</div>
+                            <div class="invalid-feedback">Please enter your last name.</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Title*</label>
+                            <input type="text" class="form-control" id="title" required>
+                            <div class="valid-feedback">Looks great!</div>
+                            <div class="invalid-feedback">Please enter your title.</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Phone Number</label>
+                            <input type="text" class="form-control" id="phone" required>
+                            <div class="valid-feedback">Nice number!</div>
+                            <div class="invalid-feedback">Please enter a valid phone number.</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Official Email ID*</label>
+                            <input type="email" class="form-control" id="email" required>
+                            <div class="valid-feedback">Perfect!</div>
+                            <div class="invalid-feedback">Please enter a valid email.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Preferred Date of Meeting - Copper to the World 2024*</label>
+                            <div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="meetingDate"
+                                        value="18th June" required>
+                                    <label class="form-check-label">18th June</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="meetingDate"
+                                        value="19th June">
+                                    <label class="form-check-label">19th June</label>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Book a Meeting</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Hero Section start-->
+    <section>
+        <div class="section-hero">
+            <div class="container text-center text-lg-start d-md-flex align-items-center flex-column flex-md-row">
+                <!-- Image First on Small Screens -->
+                <div class="col-lg-6 text-center mt-4 mt-lg-0 d-md-flex justify-content-end order-0 order-md-1">
+                    <img class="img-fluid" src="hero-image.jpeg" alt="a man sitting at a desk with a laptop">
+                </div>
+                <!-- Text Second on Small Screens -->
+                <div class="col-lg-6 order-1 order-md-0">
+                    <h1 class="fw-bold display-5">More than just shorter links</h1>
+                    <p class="text-muted px-20">Build your brand&rsquo;s recognition and get detailed <br> insights on how
+                        your links are performing.</p>
+                    <a href="#" class="btn btn-primary rounded-pill px-4">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section ends-->
+
+
+    <!-- URL Shortening Search Bar Section start-->
+    <section class="search-bar py-5">
+        <div class="container">
+            <div class="bg-dark p-4 rounded shadow text-center">
+                <form class="d-flex flex-column flex-md-row gap-3">
+                    <input type="text" class="form-control p-3" placeholder="Shorten a link here...">
+                    <button type="submit" class="btn btn-primary px-4">Shorten It!</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- URL Shortening Search Bar Section ends-->
+
+
+    <!-- Advanced Statistics Section starts-->
+    <section class="advanced-statistics py-5">
+        <div class="container text-center">
+            <h2 class="fw-bold">Advanced Statistics</h2>
+            <p class="text-muted">Track how your links are performing across the web with our advanced statistics
+                dashboard.</p>
+
+            <div class="position-relative mt-5">
+
+                <!-- Connector Line -->
+                <div class="position-absolute top-50 start-50 translate-middle w-75 border border-primary"
+                    style="height: 4px;"></div>
+
+                <div class="row g-5 justify-content-center">
+
+                    <!-- Feature 1: Brand Recognition start -->
+                    <div class="col-md-4 position-relative">
+                        <div class="card border-0 shadow p-4 text-center">
+                            <div class="icon-wrapper position-absolute top-0 start-50 translate-middle">
+                                <div class="icon-circle">
+                                    <img src="trend.png" alt="Brand Recognition" class="img-fluid">
+                                </div>
+                            </div>
+                            <h5 class="fw-bold mt-5">Brand Recognition</h5>
+                            <p class="text-muted">Boost your brand recognition with each click. Branded links instill
+                                trust
+                                and increase engagement.</p>
+                        </div>
+                    </div>
+                    <!-- Feature 1: Brand Recognition ends -->
+
+                    <!-- Feature 2: Detailed Records start -->
+                    <div class="col-md-4 position-relative mt-5">
+                        <div class="card border-0 shadow p-4 text-center">
+                            <div class="icon-wrapper position-absolute top-0 start-50 translate-middle">
+                                <div class="icon-circle ">
+                                    <img src="market.png" alt="Detailed Records" class="img-fluid">
+                                </div>
+                            </div>
+                            <h5 class="fw-bold mt-5">Detailed Records</h5>
+                            <p class="text-muted">Gain insights into who is clicking your links, knowing when and where
+                                people engage with your content.</p>
+                        </div>
+                    </div>
+                    <!-- Feature 2: Detailed Records ends -->
+
+                    <!-- Feature 3: Fully Customizable start -->
+                    <div class="col-md-4 position-relative">
+                        <div class="card border-0 shadow p-4 text-center">
+                            <div class="icon-wrapper position-absolute top-0 start-50 translate-middle">
+                                <div class="icon-circle">
+                                    <img src="flexible.png" alt="Fully Customizable" class="img-fluid">
+                                </div>
+                            </div>
+                            <h5 class="fw-bold mt-5">Fully Customizable</h5>
+                            <p class="text-muted">Improve brand awareness and content discoverability with fully
+                                customizable links.</p>
+                        </div>
+                    </div>
+                    <!-- Feature 3: Fully Customizable ends -->
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Advanced Statistics Section ends -->
+
+
+    <!-- Call-to-Action Section start-->
+    <section class="boost-links py-5 bg-dark text-white text-center">
+        <div class="container">
+            <h2 class="fw-bold">Boost your links today</h2>
+            <a href="#" class="btn btn-primary rounded-pill px-4 mt-3">Get Started</a>
+        </div>
+    </section>
+    <!-- Call-to-Action Section ends-->
+
+
+    <!-- Footer Section start-->
+    <footer class="footer py-5 bg-dark text-white">
+        <div class="container text-center text-lg-start">
+            <div class="row">
+                <div class="col-lg-3 mb-3">
+                    <h5 class="fw-bold">Shortly</h5>
+                </div>
+                <div class="col-lg-3 mb-3">
+                    <h6 class="fw-bold">Features</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">Link Shortening</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Branded Links</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Analytics</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 mb-3">
+                    <h6 class="fw-bold">Resources</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">Blog</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Developers</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Support</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 mb-3">
+                    <h6 class="fw-bold">Company</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-white text-decoration-none">About</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Our Team</a></li>
+                        <li><a href="#" class="text-white text-decoration-none">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-3">
+            <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+            <!-- <a href="#" class="me-3 text-primary"><i class="fab fa-facebook"></i></a> -->
+            <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+    <!-- Footer Section ends-->
+
+
+    <!-- Bootstrap JS start-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <!-- Bootstrap JS ends-->
+
+    <script>
+        // Form Validation
+        document.addEventListener("DOMContentLoaded", function () {
+            let form = document.getElementById("signupForm");
+            form.addEventListener("submit", function (event) {
+                if (!form.checkValidity()) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
+                form.classList.add("was-validated");
+            }, false);
+        });
+    </script>
+
+</body>
+
+</html>

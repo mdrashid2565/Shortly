@@ -1,0 +1,65 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.section-hero img {
+    max-width: 70%;
+    height: auto;
+}
+/* Line connecting the cards */
+
+/* Connector Line */
+.advanced-statistics .position-absolute.w-75 {
+    background-color: #2acfcf;
+    height: 4px;
+    top: 50%;
+    left: 12%;
+    width: 76%;
+    z-index: 0;
+}
+
+/* Icon Circle */
+.icon-circle {
+    width: 60px;
+    height: 60px;
+    background-color: #1e2a47;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+/* Ensure icons fit well */
+.icon-circle img {
+    max-width: 40px;
+    max-height: 40px;
+}
+
+/* Align the cards properly */
+.card {
+    position: relative;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+/* Stagger the middle card */
+@media (min-width: 768px) {
+    .col-md-4:nth-child(2) {
+        margin-top: 50px;
+    }
+}
+/* Line connecting the cards */
+
+.search-bar .btn {
+    white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+    .section-hero img {
+        max-width: 70%;
+    }
+}
